@@ -6,7 +6,7 @@ body {
 
 /* Header Section */
 .header-section {
-    height: 50vh; /* Adjust height for a more compact view */
+    height: 60vh; /* Adjust height for a more compact view */
     background-image: url('head.png');
     background-size: cover;
     background-position: center;
