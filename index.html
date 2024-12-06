@@ -194,8 +194,19 @@
                             <li>Coordinate mismatches of the segmented spaces on the map due to differences in the map's origin.</li>
                         </ol>
                     </p>
-                    <img src="./projects/carebuddy/toomuch.png" class="project-image" alt="seg_issue1">
-                    <img src="./projects/carebuddy/origin_issue.png" class="project-image" alt="seg_issue2">
+                    <!-- 두 이미지를 같은 행에 배치 -->
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="ratio ratio-4x3"> <!-- 원하는 비율로 변경 가능 -->
+                                <img src="./projects/carebuddy/toomuch.png" class="project-image" alt="seg_issue1">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="ratio ratio-4x3"> <!-- 원하는 비율로 변경 가능 -->
+                                <img src="./projects/carebuddy/origin_issue.png" class="project-image" alt="seg_issue2">
+                            </div>
+                        </div>
+                    </div>
                     <p>
                         To address these issues, the following solutions were implemented:
                         <ol>
@@ -456,11 +467,11 @@
                                     <li><code>angle_min</code>, <code>angle_max</code>: Range of measurement angles.</li>
                                     <li><code>angle_increment</code>: Increment between angles.</li>
                                 </ul>
-                                <p>**Result:** No change.</p>
+                                <p><strong>Result</strong> : No change.</p>
                             </li>
                             <li><strong>LiDAR Position Adjustment:</strong>
                                 <p>When LiDAR projects onto a flat surface like the ground, reflected signals may be detected slightly off the original point.<br>
-                                **Solution:** Elevated the LiDAR position to mitigate the issue.</p>
+                                <strong>Solution</strong> Elevated the LiDAR position to mitigate the issue.</p>
                             </li>
                         </ol>
                     </p>
@@ -550,20 +561,18 @@ Distance = (Focal Length * Actual Height) / Bounding Box Height
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p><strong>Project Period:</strong> 2024.07</p>
-                <p>수집한 차선 데이터를 학습하여 차량의 기울기를 조절하는 제어 알고리즘 설계 및 차선 인식 모델 학습을 수행하였습니다.</p>
                     <!-- Skill Tags -->
                     <div class="mb-3 text-center">
-                        <span class="badge bg-warning text-dark mx-1">Deep Learning</span>
-                        <span class="badge bg-warning text-dark mx-1">TensorFlow</span>
-                        <span class="badge bg-warning text-dark mx-1">Python</span>
-                        <span class="badge bg-warning text-dark mx-1">SLAM</span>
+                        <span class="badge bg-warning text-dark mx-1">ROS2</span>
                         <span class="badge bg-warning text-dark mx-1">Object Detection</span>
+                        <span class="badge bg-warning text-dark mx-1">Motor Control</span>
+                        <span class="badge bg-warning text-dark mx-1">LiDAR</span>
+                        <span class="badge bg-warning text-dark mx-1">Python</span>
                     </div>
     
                     <!-- Brief Description -->
                     <h5 class="fw-bold mt-4">Brief Description</h5>
-                    <p>This project focuses on developing a mobile air purifier robot using LiDAR SLAM and LSTM-based air quality scheduling, with object detection capabilities to avoid obstacles.</p>
+                    <p>수집한 차선 데이터를 학습하여 차량의 기울기를 조절하는 제어 알고리즘 설계 및 차선 인식 모델 학습을 수행하였습니다.</p>
     
                     <!-- Motivation -->
                     <h5 class="fw-bold mt-4">Motivation</h5>
@@ -592,8 +601,6 @@ Distance = (Focal Length * Actual Height) / Bounding Box Height
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p><strong>Project Period:</strong> 2023.08 - 2023.09</p>
-                <p>AI 기반 대화형 노년층 교통 안내 서비스로 음성 인터페이스를 통해 사용자에게 정보를 제공하였습니다.</p>
                     <!-- Skill Tags -->
                     <div class="mb-3 text-center">
                         <span class="badge bg-warning text-dark mx-1">Deep Learning</span>
@@ -605,7 +612,7 @@ Distance = (Focal Length * Actual Height) / Bounding Box Height
     
                     <!-- Brief Description -->
                     <h5 class="fw-bold mt-4">Brief Description</h5>
-                    <p>This project focuses on developing a mobile air purifier robot using LiDAR SLAM and LSTM-based air quality scheduling, with object detection capabilities to avoid obstacles.</p>
+                    <p>AI 기반 대화형 노년층 교통 안내 서비스로 음성 인터페이스를 통해 사용자에게 정보를 제공하였습니다.</p>
     
                     <!-- Motivation -->
                     <h5 class="fw-bold mt-4">Motivation</h5>
@@ -633,24 +640,20 @@ Distance = (Focal Length * Actual Height) / Bounding Box Height
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p><strong>Project Period:</strong> 2024.08</p>
-                <p>Franka로봇의 physics_step을 설정하여 Pick&Place 하는 환경을 구축.</p>
                     <!-- Skill Tags -->
                     <div class="mb-3 text-center">
-                        <span class="badge bg-warning text-dark mx-1">Deep Learning</span>
-                        <span class="badge bg-warning text-dark mx-1">TensorFlow</span>
-                        <span class="badge bg-warning text-dark mx-1">Python</span>
-                        <span class="badge bg-warning text-dark mx-1">SLAM</span>
-                        <span class="badge bg-warning text-dark mx-1">Object Detection</span>
+                        <span class="badge bg-warning text-dark mx-1">Omniverse</span>
+                        <span class="badge bg-warning text-dark mx-1">Isaac Sim</span>
+                        <span class="badge bg-warning text-dark mx-1">Dynamics</span>
                     </div>
     
                     <!-- Brief Description -->
                     <h5 class="fw-bold mt-4">Brief Description</h5>
-                    <p>This project focuses on developing a mobile air purifier robot using LiDAR SLAM and LSTM-based air quality scheduling, with object detection capabilities to avoid obstacles.</p>
+                    <p>Franka로봇의 physics_step을 설정하여 Pick&Place 하는 환경을 구축.</p>
     
                     <!-- Motivation -->
                     <h5 class="fw-bold mt-4">Motivation</h5>
-                    <p>In today’s world, air quality management is crucial, especially in urban environments. This project aims to address this challenge by creating a robot that autonomously purifies the air while navigating around obstacles to ensure optimal functionality in various indoor settings.</p>
+                    <p>Omniverse Isaac Sim의 시뮬레이션 환경에서 관절 로봇의 physics_step을 구현해보고자</p>
     
                     <!-- Images Section -->
                     <div class="mt-4">

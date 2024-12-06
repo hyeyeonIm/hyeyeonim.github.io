@@ -80,20 +80,21 @@ body {
     font-weight: bold;
 }
 
-.modal-body img {
+/* 기존 모달 이미지 스타일에서 .project-image 제외 */
+.modal-body img:not(.project-image) {
     max-height: 300px;
     width: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
 
-/* Project Images Styling */
+/* .project-image 클래스 스타일 수정 */
 .project-image {
-    display: block;               /* Ensures the image behaves as a block element */
-    max-width: 100%;              /* Ensures the image does not exceed the container's width */
-    height: 100%;                 /* Maintains the aspect ratio */
-    margin: 0 auto 1rem;          /* Centers the image and adds bottom margin */
-    border-radius: 5px;           /* Optional: Adds slight rounding to the image corners */
+    display: block;
+    max-width: 100%;
+    height: 100;
+    object-fit: cover; /* 이미지가 컨테이너를 채우도록 함 */
+    border-radius: 5px;
 }
 
 /* Skills Section */
