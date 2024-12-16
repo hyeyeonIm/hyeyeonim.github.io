@@ -19,6 +19,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <!-- 기존 네비게이션 링크 -->
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
@@ -27,6 +28,13 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact Me</a>
+                    </li>
+                    <!-- 언어 전환 버튼 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">EN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index_KR.html">KR</a>
                     </li>
                 </ul>
             </div>
@@ -38,7 +46,7 @@
         <div class="container">
             <h1 class="display-3 fw-bold">Hyeyeon IM</h1>
             <p class="lead">Building a Better World Through Communication in Robotics</p>
-            <a href="https://drive.google.com/file/d/1uZx7fEgBndUuPchfTb7mfoBMMzswJT6x/view?usp=sharing" target="_blank" class="btn btn-warning btn-lg mt-3">Resume</a>
+            <a href="https://drive.google.com/file/d/1uZx7fEgBndUuPchfTb7mfoBMMzswJT6x/view?usp=sharing" target="_blank" class="btn btn-warning btn-lg mt-3">Résumé</a>
         </div>
     </header>
 
@@ -93,7 +101,7 @@
 
             <!-- Project Card 5 - Gachigayo -->
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#projectModalGachigayo">
                     <img src="./projects/gotogether.png" class="card-img-top fixed-ratio" alt="Gachigayo: AI Conversation Service">
                     <div class="card-body">
                         <h5 class="card-title">Gachigayo: AI Conversation Service</h5>
@@ -626,11 +634,8 @@ Distance = (Focal Length * Actual Height) / Bounding Box Height
                     </li>
                 </ol>
 
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <img src="./projects/hmobility/roboflow.png" class="project-image w-100" alt="Roboflow Dataset">
-                    </div>
-                </div>
+                <img src="./projects/hmobility/roboflow.png" class="project-image mb-3" alt="Roboflow Dataset">
+
 
                 <!-- Control Algorithm -->
                 <h6 class="fw-bold mt-3">Control Algorithm</h6>
@@ -665,49 +670,155 @@ Distance = (Focal Length * Actual Height) / Bounding Box Height
                     </li>
                 </ol>
 
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <img src="./projects/hmobility/autocar.png" class="project-image w-100" alt="Autocar in Action">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 mb-3">
+                        <div class="ratio ratio-9x16">
+                            <video class="rounded project-video" controls>
+                                <source src="./projects/hmobility/autocar_demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 </div>
 
-<!-- Modal for 가치가요 -->
-<div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModalLabel4" aria-hidden="true">
+
+<!-- Modal for Gachigayo Project -->
+<div class="modal fade" id="projectModalGachigayo" tabindex="-1" aria-labelledby="projectModalLabelGachigayo" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
+            <!-- Modal Header -->
             <div class="modal-header">
-                <h5 class="modal-title" id="projectModalLabel4">가치가요</h5>
+                <h5 class="modal-title" id="projectModalLabelGachigayo">Gachigayo: AI Conversation Service</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+
+            <!-- Modal Body -->
             <div class="modal-body">
-                    <!-- Skill Tags -->
-                    <div class="mb-3 text-center">
-                        <span class="badge bg-warning text-dark mx-1">Deep Learning</span>
-                        <span class="badge bg-warning text-dark mx-1">TensorFlow</span>
-                        <span class="badge bg-warning text-dark mx-1">Python</span>
-                        <span class="badge bg-warning text-dark mx-1">SLAM</span>
-                        <span class="badge bg-warning text-dark mx-1">Object Detection</span>
-                    </div>
-    
-                    <!-- Brief Description -->
-                    <h5 class="fw-bold mt-4">Brief Description</h5>
-                    <p>AI 기반 대화형 노년층 교통 안내 서비스로 음성 인터페이스를 통해 사용자에게 정보를 제공하였습니다.</p>
-    
-                    <!-- Motivation -->
-                    <h5 class="fw-bold mt-4">Motivation</h5>
-                    <p>.</p>
-    
+                <!-- Skill Tags -->
+                <div class="mb-3 text-center">
+                    <span class="badge bg-warning text-dark mx-1">Prompt Engineering</span>
+                    <span class="badge bg-warning text-dark mx-1">Flask</span>
+                    <span class="badge bg-warning text-dark mx-1">AWS</span>
+                    <span class="badge bg-warning text-dark mx-1">GitHub</span>
+                    <span class="badge bg-warning text-dark mx-1">TTS</span>
+                    <span class="badge bg-warning text-dark mx-1">STT</span>
+                    <span class="badge bg-warning text-dark mx-1">GPT API</span>
+                </div>
 
+                <!-- Brief Description -->
+                <h5 class="fw-bold mt-4">Brief Description</h5>
+                <p>
+                    Developed an AI-based conversational transportation guidance service tailored for the elderly facing challenges with smartphone usage. The service prioritizes user convenience and safety by providing comprehensive information on various transportation modes.
+                </p>
 
+                <!-- Motivation -->
+                <h5 class="fw-bold mt-4">Motivation</h5>
+                <p>
+                    The transportation service issues faced by the elderly in our society are an undeniable reality. According to studies by the Korea Institute for Health and Social Affairs and the Ministry of Health and Welfare, the elderly rely on public transportation despite facing challenges in accessing digital information. While services like the 100-won taxi exist, they fall short of meeting actual needs.
+                </p>
+                <p>
+                    The rapid pace of digital technology adoption has led to a widening information gap for the elderly. They encounter difficulties in using smartphones and computers in their daily lives, including when utilizing transportation modes like buses and subways. Specifically, finding route information, schedules, and transfer details online poses significant barriers for the elderly.
+                </p>
+                <p>
+                    To fundamentally address these issues, we proposed the 'Voice Guidance Service for the Elderly.' This service is designed to resolve the challenges the elderly face when using transportation, aiming to make their transportation experiences more convenient and safe.
+                </p>
+
+                <!-- Project Introduction -->
+                <h6 class="fw-bold mt-3">Project Introduction</h6>
+                <p>
+                    <strong>Gachigayo</strong> is an AI-driven conversational service designed to provide specialized transportation information for the elderly who are not well-versed in digital technologies. This service emphasizes user convenience and safety, offering detailed information on various transportation methods.
+                </p>
+                <ul>
+                    <li><strong>City/Intercity Travel:</strong> Provides bus, subway, and train route information along with taxi call connection services.</li>
+                    <li><strong>Location Information:</strong> Allows users to check operating hours of destinations and receive notifications about closing times.</li>
+                    <li><strong>Weather Information:</strong> Offers current and forecasted weather updates, recommends taxis during severe weather conditions, and alerts users about weather-related precautions.</li>
+                </ul>
+                <p>
+                    To utilize this service, user consent for location information is required. By accurately identifying the departure and destination points through prompted queries, the service aims to deliver precise transportation information.
+                </p>
+
+                <!-- Market Research -->
+                <h6 class="fw-bold mt-3">Market Research</h6>
+                <p>
+                    According to the Korea Institute for Health and Social Affairs, the primary modes of transportation for the elderly are buses and subways, with a high usage rate of 68.2%, particularly among the 70-74 age group.
+                </p>
+                <p>
+                    Based on the 2020 survey by the Ministry of Health and Welfare, 71.2% of the elderly use public transportation when going out. However, since most information services are online-centric, 74.1% of the elderly find it challenging. Moreover, they face difficulties in using digital devices in daily life.
+                </p>
+                <p>
+                    Despite the accessibility of public transportation, the rapid digitalization has exacerbated the inconvenience for the elderly. The 2018 Information Gap Survey by the National Information Society Agency revealed that the digital literacy of the elderly is only half of the overall average. In an interview with Daily Good News, Mr. Park (80) stated, "I can only go to places I know, and it's burdensome to ask bus drivers for directions."
+                </p>
+                <p>
+                    According to a Financial News article, as public transportation services become more digitalized, the elderly are struggling to adapt to these changes. For instance, Mr. A (late 50s) finds the smartphone app-based taxi booking unfamiliar, leading to long waits on the street. Similarly, Mr. C (71) has difficulty booking trains digitally and resorts to visiting stations or making reservations by phone.
+                </p>
+                <p>
+                    Nowadays, most bus and subway information is available online, but approximately 74.1% of the elderly find it difficult to obtain such online information. In conclusion, the digitalization of public transportation services has posed multiple challenges for the elderly in adapting to these changes, reflecting a lack of efficient services tailored for them despite their active use of public transportation.
+                </p>
+
+                <!-- Key Features and Implementation -->
+                <h6 class="fw-bold mt-3">Key Features and Implementation</h6>
+                <p>
+                    Although the smartphone usage capability of the elderly is steadily increasing, it remains limited to phone calls and video watching. Therefore, **Gachigayo** aims to provide a convenient service for the elderly with low digital literacy by developing an AI voice recognition-based conversational service.
+                </p>
+                <ul>
+                    <li><strong>Feature 1: City/Intercity Travel Route Guidance</strong>
+                        <ul>
+                            <li>Provides bus, subway, and train route information along with taxi call connection services.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Feature 2: Weather Information Guidance</strong>
+                        <ul>
+                            <li>Offers current weather information, recommends taxis during severe weather conditions, and alerts users about weather-related precautions.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Feature 3: SMS Service</strong>
+                        <ul>
+                            <li>Sends detailed route information and, for intercity travel, includes Koreail/Bus Terminal numbers in the messages.</li>
+                            <li>
+                                <img src="./projects/gotogether/call_post_message.png" class="project-image mb-3" alt="Post-Call Message Example">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Workflow Diagram -->
+                <h6 class="fw-bold mt-3">Workflow</h6>
+                <ol>
+                    <li>Converts speech to text using Google STT.</li>
+                    <li>Extracts departure and destination information using GPT prompting.</li>
+                    <li>Searches routes using Google Maps API.</li>
+                    <li>Generates explanatory text using GPT prompting.</li>
+                    <li>Converts text to speech using Google TTS.</li>
+                    <li>Provides map and text guidance messages after call termination.</li>
+                </ol>
+
+                <!-- Revenue Model -->
+                <h6 class="fw-bold mt-3">Revenue Model</h6>
+                <ul>
+                    <li>Implemented a filial piety plan targeting adult children to support their elderly parents.</li>
+                    <li>
+                        <img src="./projects/gotogether/filial_piety_plan.png" class="project-image mb-3" alt="Filial Piety Plan">
+                    </li>
+                </ul>
+
+                <!-- Embedded YouTube Video -->
+                <h5 class="fw-bold mt-4">Project Demonstration</h5>
+                <div class="ratio ratio-16x9 mb-4">
+                    <iframe src="https://www.youtube.com/embed/S4wqVm0MXU8" title="Gachigayo - AI Conversation Service" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <!-- Landing Page Link -->
+                <p class="text-center">
+                    <a href="https://main--cosmic-pixie-da0689.netlify.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit Landing Page</a>
+                </p>
             </div>
         </div>
     </div>
 </div>
-
 
 
 <!-- Modal for Isaac Sim Project -->
@@ -805,10 +916,10 @@ Distance = (Focal Length * Actual Height) / Bounding Box Height
                         </ul>
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <img src="./projects/franka/tray.png" class="project-image w-100" alt="Tray">
+                                <img src="./projects/franka/tray.png" class="project-image uniform-height" alt="Tray">
                             </div>
                             <div class="col-md-6 mb-3">
-                                <img src="./projects/franka/add_tray.png" class="project-image w-100" alt="Adding Tray">
+                                <img src="./projects/franka/add_tray.png" class="project-image uniform-height" alt="Adding Tray">
                             </div>
                         </div>
                     </li>
@@ -887,7 +998,7 @@ Distance = (Focal Length * Actual Height) / Bounding Box Height
                 </div>
                 <div class="col-md-4">
                     <h5>Mechanical Engineering</h5>
-                    <p>AutoCAD, NX</p>
+                    <p>NX, AutoCAD</p>
                 </div>
             </div>
         </div>
