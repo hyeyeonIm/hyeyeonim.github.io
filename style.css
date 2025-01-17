@@ -66,6 +66,20 @@ body {
     object-fit: cover;
 }
 
+/* Room Segmentation Adjustments */
+.ratio {
+    margin-bottom: 1rem; /* Add space between rows */
+}
+
+.project-image {
+    display: block;
+    max-width: 100%;
+    height: auto; /* Ensure images keep their aspect ratio */
+    object-fit: cover; /* Images fill their container */
+    margin-bottom: 1rem; /* Add spacing below each image */
+    border-radius: 5px;
+}
+
 /* Modal Styling */
 .modal-content {
     border-radius: 10px;
@@ -80,66 +94,27 @@ body {
     font-weight: bold;
 }
 
-/* 기존 모달 이미지 스타일에서 .project-image 제외 */
-.modal-body img:not(.project-image) {
+.modal-body img {
     max-height: 300px;
     width: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
 
-/* .project-image 클래스 스타일 수정 */
-/* .project-image {
-    display: block;
-    max-width: 100%;
-    height: 100;
-    object-fit: cover; 
-    border-radius: 5px;
-} */
-
 /* Custom Aspect Ratio for 9:16 */
 .ratio-9x16 {
     --bs-aspect-ratio: 177.78%; /* 16 / 9 * 100% */
 }
 
-/* Project Images and Videos Styling */
-.project-image, .project-video {
-    object-fit: cover; /* Ensures the media covers the container without distortion */
-    border-radius: 5px; /* Adds subtle rounded corners */
-}
-
-/* Set maximum height for media elements within the 9:16 ratio */
-.ratio-9x16 img, .ratio-9x16 video {
-    max-height: 600px; /* Adjust based on your design requirements */
-}
-
-/* Ensure videos do not exceed modal dimensions */
-.modal-xl .ratio {
-    max-width: 100%;
-}
-
-/* Responsive Adjustments for Smaller Screens */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .ratio-9x16 img, .ratio-9x16 video {
-        max-height: 600px; /* Adjust for smaller screens */
+        max-height: 400px; /* Reduced height for smaller screens */
     }
-}
 
-/* Corrected .project-image class */
-.project-image {
-    display: block;
-    max-width: 100%;
-    height: auto; /* Allow height to adjust based on aspect ratio */
-    object-fit: cover; /* 이미지가 컨테이너를 채우도록 함 */
-    border-radius: 5px;
-}
-
-
-.uniform-height {
-    width: 100%;
-    height: 300px; /* Set a fixed height */
-    object-fit: cover; /* Ensures the image covers the container without distortion */
-    border-radius: 5px; /* Optional: Adds rounded corners */
+    .project-image {
+        margin-bottom: 1.5rem; /* Adjust spacing for smaller screens */
+    }
 }
 
 /* Skills Section */
